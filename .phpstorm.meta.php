@@ -10,7 +10,7 @@
 			'View' instanceof Think\Model\ViewModel,
 			'Relation' instanceof Think\Model\RelationModel,
 			'Merge' instanceof Think\Model\MergeModel,
-			'CategoryMod' instanceof Home\Model\CategoryModel.cl,
+			'DefineMod' instanceof Home\Model\DefineModel.cl,
 		],
 	];
 }
