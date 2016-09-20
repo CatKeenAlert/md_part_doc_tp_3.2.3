@@ -17,7 +17,6 @@ class UserModel extends Model {
 }</code></pre>
 模型类的作用大多数情况是操作数据表的，如果按照系统的规范来命名模型类的话，大多数情况下是可以自动对应数据表。
 模型类的命名规则是除去表前缀的数据表名称，采用驼峰法命名，并且首字母大写，然后加上模型层的名称（默认定义是Model），例如：
-<!-- -->
 <table>
 <tr>
 <th>模型名约定对应数据表</th><th>（假设数据库的前缀定义是 think_）</th>
@@ -77,7 +76,6 @@ use Think\Model;
 class CategoryModel extends Model {
 protected $tablePrefix = '';
 }</code></pre>
-<hr>
 没有表前缀的情况必须设置，否则会获取当前配置文件中的 DB_PREFIX 。
 而对于另外一种特殊情况，我们需要操作的数据表是top_categories ，这个时候我们就需要定义trueTableName 属性
 <pre><code>namespace Home\Model;
